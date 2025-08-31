@@ -13,12 +13,15 @@ Players and communities need a trustless way to validate scores without central 
 - Players generate a zkProof of their score completion when submitting results.
 - The leaderboard only accepts scores accompanied by valid zkProofs.
 - Privacy is preserved: proof shows validity without revealing raw game data.
+- **Example Use Case**: simple games like Flappy Bird or 2048 where players submit scores, and only valid zkProof-backed results are accepted.
 
 ## Technical Architecture
 - **Game Client (frontend)**: Provides score data and generates zkProof of completion.
 - **Proof Generator (backend or local)**: Uses Soundness SDK to create zkProofs.
 - **Verifier (on-chain)**: Smart contract integrated with Soundness Layer verifies proofs before updating the leaderboard.
 - **Leaderboard dApp (frontend)**: Displays only verified scores.
+
+📂 Repo (WIP): [zk-gaming-leaderboard](https://github.com/zidr1/zk-gaming-leaderboard)
 
 ## Development Timeline
 - **Week 1**: Define game mechanics + minimal scoring system.
@@ -29,7 +32,7 @@ Players and communities need a trustless way to validate scores without central 
 ## Team / Contributors
 - GitHub: [@zidr1](https://github.com/zidr1)
 - Username Discord: mogaelig#0
-- User ID  Discord: (862107794253676545)
+- User ID Discord: (862107794253676545)
 
 ## Category
 Gaming
@@ -38,3 +41,4 @@ Gaming
 - Expand to multiplayer competitions.
 - On-chain tournaments with verified rewards.
 - Integration with NFT-based player identities.
+- Cross-game universal leaderboard for Web3 gaming.
